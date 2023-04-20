@@ -1,0 +1,77 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ClientServiceApplication<client-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.giulianabezerra.clientservice.ClientServiceApplication",
+      "projectName": "client-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-MessagesResourceApplication<messages-resource>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.giulianabezerra.messagesresource.MessagesResourceApplication",
+      "projectName": "messages-resource",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=64051 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=messages-resource"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-SpringAuthServerApplication<spring-auth-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.giulianabezerra.springauthserver.SpringAuthServerApplication",
+      "projectName": "spring-auth-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ClientServiceApplication<messages-client>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.giulianabezerra.clientservice.ClientServiceApplication",
+      "projectName": "messages-client",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AuthServerApplication<auth-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.giulianabezerra.authserver.AuthServerApplication",
+      "projectName": "auth-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61040 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=auth-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ClientServerApplication<client-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.giulianabezerra.clientserver.ClientServerApplication",
+      "projectName": "client-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61049 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=client-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ResourceServerApplication<resource-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.giulianabezerra.resourceserver.ResourceServerApplication",
+      "projectName": "resource-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
